@@ -16,15 +16,15 @@ public class Main {
 
         for(int cent : cents)
         {
-            // 1 = 345 x 200
+            // 1 = 345 / 200
             int numberOfCoins = originalAmount / cent;
-            // 1 > 0
+            // 1 > 0 ,
             if(numberOfCoins > 0)
             {
                 //printing out number of coins needed 1, then getting the cents(200)*100.0 + coins
                 System.out.println(numberOfCoins +" €"+ (cent/100.0)+" coins");
                 //original amount = originalAmount(345) - (1 * 200)
-                originalAmount -= numberOfCoins * cent;
+                originalAmount -= numberOfCoins *cent;
             }
         }
 
